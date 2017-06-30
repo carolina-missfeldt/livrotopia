@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo-cadastro.css">
+		<link rel="shortcut icon" href="img/logo/logo.ico">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/smile.js"></script>
+	</head>
+	<body>
+		<div class="container">
+						<header>
+						<div class="logo-header">
+							<img src="img/logo/logo-cabecalho.jpg">
+						</div>
+						<div class="menu-principal">
+
+							<ul id="menu-principal">
+								
+								<a href="index.html">
+									<li id="um">
+									
+										<img src="img/happy2.png" id="smile">
+										<p>Home</p>
+									
+									</li>
+								</a>
+
+								<a href="cadastrar.html">
+									<li>
+										<img id="icone-do-menu" src="img/create-icon.png" alt="">
+										<p>cadastrar</p>
+										
+									</li>
+								</a>
+								<a href="busca.html">
+									<li>
+										<img id="icone-do-menu" src="img/procurar-icon.png" alt="">
+										<p>busca</p>
+									</li>
+								</a>
+								<a href="login.html">
+									<li>
+										<img id="icone-do-menu" src="img/login-icon.png" alt="">
+										<p>Entrar</p>
+										
+									</li>
+								</a>
+								<a href="sobre.html">
+									<li>
+										<img id="icone-do-menu" src="img/about-icon.png" alt="">
+										<p>sobre</p>	
+									</li>
+								</a>
+								<a href="contato.html">
+									<li>
+											<img id="icone-do-menu" src="img/contact.png" alt="">
+											<p>contato</p>
+									</li>
+								</a>
+								
+							</ul>
+						</div>
+
+				</header>
+			<div class="titulo-principal">
+				<h1>Crie sua conta</h1>
+			</div>
+			<div class="caixa-cadastro">
+				<div class="conteudo-esquerdo">
+					<div class="titulo-section"><h1>Dados da Conta</h1></div>
+					<p class="obs">Todos os campos são obrigatórios</p>
+
+					<form action="cadastrar.php" name="conta" method="POST" class="form-esquerdo">
+						
+							
+						<label for="email"><h2>Email</h2></label>
+							<p><input type="email" id="email" name="email" class="input-cadastro" placeholder="exemplo@exemplo.com" required="required"></p>
+						<label for="confirmaEmail">Confirme seu email</label>
+							<p><input type="email" id="confirmaEmail" name="confirmaEmail" class="input-cadastro" required="required" autocomplete="off"></p>
+
+						<label for="senha"><h2>Senha</h2></label>
+							<p><input type="password" id="senha" name="senha" class="input-cadastro" required="required"></p>
+						<label for="confirmaSenha"><h2>Confirme sua senha</h2></label>
+							<p><input type="password" id="confirmaSenha" name="confirmaSenha" class="input-cadastro" required="required"></p>
+
+					<!--</form>-->
+					<div class="titulo-section" id="foto-de-perfil">
+						<h1>Foto de Perfil</h1>
+					</div>
+					
+						<input name="imagem" type="file" id="fotoPerfil" accept="image/*">
+
+				
+				</div>
+				<div class="conteudo-direito">
+					<div class="titulo-section"><h1>Dados do Perfil</h1></div>
+					<!--<form action="#" method="POST" class="form-direito">-->
+						<h2>Nome</h2>
+						<input type="text" name="nome" class="input-cadastro" placeholder="fulano de tal" required="required" pattern="[a-z\s]+$" autocomplete="off">
+						
+						<h2>Gênero</h2>
+
+						<input type="radio" name="genero" value="feminino" id="feminino" class="input-genero">
+							<label for="feminino" required>Feminino</label>
+						<input type="radio" name="genero" value="masculino" id="masculino" class="input-genero">
+						<label for="masculino" required>Masculino</label>
+						<h2>Idade</h2>
+						<input type="text" name="idade" class="input-cadastro" placeholder="20" required="required" pattern="[0-9]+$">
+
+
+ 						<h2>Endereço</h2>
+ 					
+						<label for="cidade"  class="cidade">Cidade</label>
+							<input type="text" id="cidade" name="cidade" class="input-cadastro" required="required" autocomplete="off">
+						<label for="estado" class="estado">Estado</label>
+							<input type="text" id="estado" name="estado" class="input-cadastro" required="required" autocomplete="off">
+					
+							
+							<input type="submit" name="login" value="Enviar" id="login">
+					</form>
+				</div>
+
+			</div>
+		<div class="clear"></div>
+			<footer>
+					<div id="copy"><p>&copy;- by Carolina Missfeldt - 2016 -</p>
+					<p><a href="https://www.facebook.com/carolina.missfeldt" target="_blank">Facebook</a> | <a href="https://www.linkedin.com/in/carolina-missfeldt-55198a93?trk=nav_responsive_tab_profile" target="_blank">Linkedin</a></p></div>
+					<a href=""><img src="img/logo/logo5.jpg" alt="logotipo" id="logo-footer" ></a>
+
+				</footer>
+		
+		</div>
+	</body>
+</html>

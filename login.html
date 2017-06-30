@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Entrar</title>
+			<meta name="viewport" content="width=device-width, user-scalable=no">
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" type="text/css" href="css/estilo.css">
+			<link rel="stylesheet" type="text/css" href="css/estilo-cadastro.css">
+			<link rel="shortcut icon" href="img/logo/logo.ico">
+			<script src="js/jquery-1.11.3.min.js"></script>
+			<script src="js/smile.js"></script>
+			<style type="text/css">
+
+				.caixa-cadastro {
+					max-width: 500px;
+					margin: 100px auto;
+					height: auto;
+					display: table;
+					border: 1px solid rgba(0,0,0,0.3);
+					
+				}
+
+				.titulo-principal {
+					border-top: none;
+				}
+
+				.caixa-login {
+					width: 100%;
+					height: auto;
+					margin: 0 auto;
+				}
+
+				#form-login {
+						
+					
+					width: 100%;
+					height: auto;
+					padding: 5px 10px;
+					border: none;
+					border-radius: 5px;
+					font-size: 20px;
+					color: #000;
+
+				}
+
+				 form p {
+					margin-top: 20px;
+				}
+
+				#esqueci-a-senha {
+					color: #000;
+					font-size: 12px;
+					margin-top: 5px !important;
+					
+				}
+
+				#esqueci-a-senha:hover {
+					color: #ff9801;
+
+				}
+
+				.sub{
+					font-weight: 700;
+					padding-left: 10px;
+					}
+
+				#a-login {
+					width: 90px;
+					float: right;
+				}
+
+				#login {
+					float: right;
+					margin-top: 0;
+
+				}
+
+				#input-senha {
+					font-size: 15px;
+				}
+
+				@media screen and (min-width: 1099px) {
+					#form-login {
+						width: 400px;
+						margin: 0 auto;
+					}
+
+
+
+					
+				}	
+				
+			</style>
+	</head>
+	<body>
+		<div class="container">
+						<header>
+						<div class="logo-header">
+							<img src="img/logo/logo-cabecalho.jpg">
+						</div>
+						<div class="menu-principal">
+
+							<ul id="menu-principal">
+								
+								<a href="index.html">
+									<li id="um">
+									
+										<img src="img/happy2.png" id="smile">
+										<p>Home</p>
+									
+									</li>
+								</a>
+
+								<a href="cadastrar.html">
+									<li>
+										<img id="icone-do-menu" src="img/create-icon.png" alt="">
+										<p>cadastrar</p>
+										
+									</li>
+								</a>
+								<a href="busca.html">
+									<li>
+										<img id="icone-do-menu" src="img/procurar-icon.png" alt="">
+										<p>busca</p>
+									</li>
+								</a>
+								<a href="login.html">
+									<li>
+										<img id="icone-do-menu" src="img/login-icon.png" alt="">
+										<p>Entrar</p>
+										
+									</li>
+								</a>
+								<a href="sobre.html">
+									<li>
+										<img id="icone-do-menu" src="img/about-icon.png" alt="">
+										<p>sobre</p>	
+									</li>
+								</a>
+								<a href="contato.html">
+									<li>
+											<img id="icone-do-menu" src="img/contact.png" alt="">
+											<p>contato</p>
+									</li>
+								</a>
+								
+							</ul>
+						</div>
+
+				</header>
+				
+
+			<div class="caixa-cadastro">
+				<div class="titulo-principal">
+					<h1>Entrar</h1>
+				</div>
+				<div class="caixa-login">
+
+					<p class="sub">Entre e encontre aquele livro</p>
+						<div id="form-login">
+						<div class="clear"></div>
+							<form>
+								<label>
+									<p>E-mail</p>
+									<input type="email" id="input-email" name="usuario" required="required">
+								</label>
+								<label>
+									<p>Senha</p>
+									<input type="password" id="input-senha" name="senha" required="required">
+								</label>
+								
+
+								<!--<label for="input-lembrar">
+									<p><input type="checkbox" id="input-lembrar" name="lembrar-usuario"> Manter-me conectado</p>
+								</label>-->
+								<p><a href="#" id="esqueci-a-senha">Esqueci minha senha</a></p>
+								<a href="perfil.php" id="a-login"><input type="button" name="login" value="Entrar" id="login"></a>
+							</form>
+						</div>
+					</div>
+
+			</div>
+		<div class="clear"></div>
+						<footer>
+					<div id="copy"><p>&copy;- by Carolina Missfeldt - 2016 -</p>
+					<p><a href="https://www.facebook.com/carolina.missfeldt" target="_blank">Facebook</a> | <a href="https://www.linkedin.com/in/carolina-missfeldt-55198a93?trk=nav_responsive_tab_profile" target="_blank">Linkedin</a></p></div>
+					<a href=""><img src="img/logo/logo5.jpg" alt="logotipo" id="logo-footer" ></a>
+
+				</footer>
+		</div>
+	</body>
+</html>
